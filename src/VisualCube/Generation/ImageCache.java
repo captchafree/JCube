@@ -23,13 +23,13 @@ class ImageCache {
 
     private ImageCache() {
         File cache = new File(cacheDirectory);
-        if(!cache.exists()) {
+        if (!cache.exists()) {
             cache.mkdirs();
         }
     }
 
     static ImageCache getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new ImageCache();
         }
         return instance;
@@ -38,6 +38,7 @@ class ImageCache {
     /**
      * Sets the url that the generator will attempt to connect to. The url must be running an instance of visualcube
      * in order for image generation to work. By default the url is visualcube's author's website (http://cube.crider.co.uk/visualcube.php).
+     *
      * @param url The url to be used for image generation
      */
     public void setURL(String url) {
@@ -46,7 +47,7 @@ class ImageCache {
 
     BufferedImage get(VCAttributes pref) {
         File cachedImage = new File(cacheDirectory + pref.hashCode() + "." + pref.getFileExtension());
-        if(cachedImage.exists()) {
+        if (cachedImage.exists()) {
             return ImageHandler.getImage(cachedImage);
         }
 
@@ -69,7 +70,7 @@ class ImageCache {
     }
 
     void clear() {
-        for(File file : new File(cacheDirectory).listFiles()) {
+        for (File file : new File(cacheDirectory).listFiles()) {
             file.delete();
         }
     }

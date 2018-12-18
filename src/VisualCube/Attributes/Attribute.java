@@ -12,12 +12,14 @@ abstract class Attribute implements Comparable<Attribute> {
 
     /**
      * Returns the id of the attribute.
+     *
      * @return
      */
     abstract String getIdentifier();
 
     /**
      * Converts the input into a usable form.
+     *
      * @param input The input to be validated and converted into a String.
      * @return A String representation of the input.
      * @throws InvalidAttributeException Thrown if the input is invalid.

@@ -30,7 +30,7 @@ public class VCAttributes {
 
         String[] terms = new String[prefs.length + 1];
 
-        for(int i = 0; i < prefs.length; i++) {
+        for (int i = 0; i < prefs.length; i++) {
             terms[i] = prefs[i].toString();
         }
         terms[terms.length - 1] = fileTypePreferred.toString() + "." + fileTypePreferred.getValue();
@@ -42,6 +42,7 @@ public class VCAttributes {
 
     /**
      * Gets the file extension associated with the attributes.
+     *
      * @return the file extension (e.g. "png", "jpg", "gif")
      */
     public String getFileExtension() {
@@ -64,7 +65,7 @@ public class VCAttributes {
     //====================================Setters====================================
 
     public VCAttributes algorithm(String algorithm) {
-        if(algorithm == null) {
+        if (algorithm == null) {
             return this;
         }
 
@@ -73,7 +74,7 @@ public class VCAttributes {
     }
 
     public VCAttributes fileType(FileType fileType) {
-        if(fileType == null) {
+        if (fileType == null) {
             return this;
         }
 
@@ -82,7 +83,7 @@ public class VCAttributes {
     }
 
     public VCAttributes imageSize(Integer size) {
-        if(size == null) {
+        if (size == null) {
             return this;
         }
 
@@ -91,7 +92,7 @@ public class VCAttributes {
     }
 
     public VCAttributes backgroundColor(BackgroundColor color) {
-        if(color == null) {
+        if (color == null) {
             return this;
         }
 
@@ -100,7 +101,7 @@ public class VCAttributes {
     }
 
     public VCAttributes puzzleType(Integer size) {
-        if(size == null) {
+        if (size == null) {
             return this;
         }
 
@@ -109,7 +110,7 @@ public class VCAttributes {
     }
 
     public VCAttributes algorithmCase(String algorithm) {
-        if(algorithm == null) {
+        if (algorithm == null) {
             return this;
         }
 
@@ -118,7 +119,7 @@ public class VCAttributes {
     }
 
     public VCAttributes stageMask(StageMaskType mask) {
-        if(mask == null) {
+        if (mask == null) {
             return this;
         }
 
@@ -127,7 +128,7 @@ public class VCAttributes {
     }
 
     public VCAttributes view(ViewType view) {
-        if(view == null) {
+        if (view == null) {
             return this;
         }
 

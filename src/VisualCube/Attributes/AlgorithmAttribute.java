@@ -20,8 +20,8 @@ class AlgorithmAttribute extends Attribute {
         String algorithm = (String) input;
 
         algorithm = algorithm.replace(" ", "");
-        boolean isValid =  algorithm.matches("[" + validCharacters + "]*");
-        if(!isValid) {
+        boolean isValid = algorithm.matches("[" + validCharacters + "]*");
+        if (!isValid) {
             throw new InvalidAlgorithmException("An algorithm can consist of only the characters in the set {" +
                     validCharacters.join(", ", validCharacters.split("")) + "}");
         }

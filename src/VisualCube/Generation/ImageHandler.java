@@ -13,6 +13,7 @@ class ImageHandler {
 
     /**
      * Returns the image located at the URL
+     *
      * @param url The URL to retrieve the image from
      * @return The image at the URL
      * @throws IOException If the image cannot be read
@@ -20,7 +21,7 @@ class ImageHandler {
     static BufferedImage getImage(URL url) {
         try {
             return ImageIO.read(url);
-        } catch(IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -29,6 +30,7 @@ class ImageHandler {
 
     /**
      * Returns the image located at the URL
+     *
      * @param file The file to retrieve the image from
      * @return The image at the URL
      * @throws IOException If the image cannot be read
@@ -36,7 +38,7 @@ class ImageHandler {
     static BufferedImage getImage(File file) {
         try {
             return ImageIO.read(file);
-        } catch(IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -45,12 +47,13 @@ class ImageHandler {
 
     /**
      * Saves an image to a specified file
-     * @param image The image to save
+     *
+     * @param image    The image to save
      * @param filename The name of the file to save the image to
      * @return True if the image was saved successfully, false otherwise.
      */
     static boolean saveImageToFile(BufferedImage image, String filename) {
-        if(image == null) {
+        if (image == null) {
             return true;
         }
 
@@ -69,8 +72,9 @@ class ImageHandler {
 
     /**
      * Saves an image to a specified file
+     *
      * @param image The image to save
-     * @param file The file to save the image to
+     * @param file  The file to save the image to
      * @return True if the image was saved successfully, false otherwise.
      */
     static boolean saveImageToFile(BufferedImage image, File file) {

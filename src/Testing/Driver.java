@@ -15,10 +15,8 @@ class Driver {
         cube.executeScramble("U2");
 
 
-
         String result = Solver.solve(cube);
         System.out.println(result);
-
 
 
         RandomStateScrambler scrambler = new RandomStateScrambler();
@@ -26,7 +24,6 @@ class Driver {
 
         CrossSolvedScrambler cScrambler = new CrossSolvedScrambler();
         System.out.println(cScrambler.generate());
-
 
 
         VCAttributes attr = new VCAttributes()

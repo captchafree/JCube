@@ -13,6 +13,7 @@ public class VisualCube {
 
     /**
      * Returns an image with the specified attributes.
+     *
      * @param attributes The attributes to be used to generate the image.
      * @return An image matching the specified attributes.
      */
@@ -22,9 +23,10 @@ public class VisualCube {
 
     /**
      * Saves an image to a specified file.
+     *
      * @param attributes The set of attributes used to generate the image.
-     * @param name The name of the file to save the image to. Note that the file extension should be omitted
-     *                 since it is contained in the attributes.
+     * @param name       The name of the file to save the image to. Note that the file extension should be omitted
+     *                   since it is contained in the attributes.
      */
     public static void saveImageWithAttributesToFile(VCAttributes attributes, String name) {
         final String filename = directory + name;
@@ -38,6 +40,7 @@ public class VisualCube {
     /**
      * Sets the url that the generator will attempt to connect to. The url must be running an instance of visualcube
      * in order for image generation to work. By default the url is visualcube's author's website (http://cube.crider.co.uk/visualcube.php).
+     *
      * @param url The url to be used for image generation
      */
     public static void setURL(String url) {
