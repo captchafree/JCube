@@ -1,6 +1,6 @@
-package VisualCube.Attributes;
+package visualcube.attributes;
 
-import VisualCube.Exceptions.InvalidAlgorithmException;
+import visualcube.exceptions.InvalidAlgorithmException;
 
 class AlgorithmAttribute extends Attribute {
 

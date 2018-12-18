@@ -1,9 +1,9 @@
-package Scramblers;
+package scramblers;
 
-import RubiksCube.Representation.CornerCubie;
-import RubiksCube.Representation.CornerCubies;
-import RubiksCube.Representation.EdgeCubie;
-import RubiksCube.Representation.EdgeCubies;
+import rubikscube.representation.CornerCubie;
+import rubikscube.representation.CornerCubies;
+import rubikscube.representation.EdgeCubie;
+import rubikscube.representation.EdgeCubies;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;

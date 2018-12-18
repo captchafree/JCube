@@ -1,6 +1,6 @@
-package VisualCube.Attributes;
+package visualcube.attributes;
 
-import VisualCube.Exceptions.InvalidAttributeException;
+import visualcube.exceptions.InvalidAttributeException;
 
 abstract class Attribute implements Comparable<Attribute> {
 

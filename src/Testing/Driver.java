@@ -1,12 +1,12 @@
-package Testing;
+package testing;
 
-import CubeSolver.Solver;
-import RubiksCube.Representation.RubiksCube;
-import Scramblers.CrossSolvedScrambler;
-import Scramblers.RandomStateScrambler;
-import VisualCube.Attributes.StageMaskType;
-import VisualCube.Attributes.VCAttributes;
-import VisualCube.Generation.VisualCube;
+import cubesolver.Solver;
+import rubikscube.representation.RubiksCube;
+import scramblers.CrossSolvedScrambler;
+import scramblers.RandomStateScrambler;
+import visualcube.attributes.StageMaskType;
+import visualcube.attributes.VCAttributes;
+import visualcube.generation.VisualCube;
 
 public class Driver {
 

@@ -1,4 +1,4 @@
-package VisualCube.Attributes;
+package visualcube.attributes;
 
 public enum BackgroundColor {
 

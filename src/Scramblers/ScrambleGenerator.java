@@ -1,7 +1,7 @@
-package Scramblers;
+package scramblers;
 
-import CubeSolver.Solver;
-import RubiksCube.Representation.RubiksCube;
+import cubesolver.Solver;
+import rubikscube.representation.RubiksCube;
 
 public abstract class ScrambleGenerator {
 

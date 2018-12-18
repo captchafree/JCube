@@ -1,4 +1,4 @@
-package VisualCube.Attributes;
+package visualcube.attributes;
 
 import com.sun.istack.internal.NotNull;
 

@@ -1,4 +1,4 @@
-package VisualCube.Exceptions;
+package visualcube.exceptions;
 
 public class InvalidCaseException extends InvalidAttributeException {
 

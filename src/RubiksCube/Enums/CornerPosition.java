@@ -1,4 +1,4 @@
-package RubiksCube.Enums;
+package rubikscube.enums;
 
 public enum CornerPosition {
     ULB,

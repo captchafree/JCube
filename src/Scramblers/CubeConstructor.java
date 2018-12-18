@@ -1,8 +1,8 @@
-package Scramblers;
+package scramblers;
 
-import RubiksCube.Enums.CornerPosition;
-import RubiksCube.Enums.EdgePosition;
-import RubiksCube.Representation.*;
+import rubikscube.enums.CornerPosition;
+import rubikscube.enums.EdgePosition;
+import rubikscube.representation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;

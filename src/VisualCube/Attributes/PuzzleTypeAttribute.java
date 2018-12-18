@@ -1,6 +1,6 @@
-package VisualCube.Attributes;
+package visualcube.attributes;
 
-import VisualCube.Exceptions.PuzzleTypeOutOfBoundsException;
+import visualcube.exceptions.PuzzleTypeOutOfBoundsException;
 
 class PuzzleTypeAttribute extends Attribute {
 

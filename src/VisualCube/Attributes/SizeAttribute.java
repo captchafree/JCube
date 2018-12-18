@@ -1,6 +1,6 @@
-package VisualCube.Attributes;
+package visualcube.attributes;
 
-import VisualCube.Exceptions.SizeOutOfBoundsException;
+import visualcube.exceptions.SizeOutOfBoundsException;
 
 public class SizeAttribute extends Attribute {
 

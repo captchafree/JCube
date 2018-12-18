@@ -1,9 +1,9 @@
-package RubiksCube.Representation;
+package rubikscube.representation;
 
-import RubiksCube.Enums.Color;
-import RubiksCube.Enums.CornerPosition;
-import RubiksCube.Enums.Direction;
-import RubiksCube.Enums.EdgePosition;
+import rubikscube.enums.Color;
+import rubikscube.enums.CornerPosition;
+import rubikscube.enums.Direction;
+import rubikscube.enums.EdgePosition;
 
 import java.util.HashMap;
 import java.util.Map;

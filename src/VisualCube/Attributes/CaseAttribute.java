@@ -1,6 +1,6 @@
-package VisualCube.Attributes;
+package visualcube.attributes;
 
-import VisualCube.Exceptions.InvalidCaseException;
+import visualcube.exceptions.InvalidCaseException;
 
 class CaseAttribute extends Attribute {
 

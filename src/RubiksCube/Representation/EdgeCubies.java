@@ -1,7 +1,7 @@
-package RubiksCube.Representation;
+package rubikscube.representation;
 
-import RubiksCube.Enums.Color;
-import RubiksCube.Enums.EdgePosition;
+import rubikscube.enums.Color;
+import rubikscube.enums.EdgePosition;
 
 public class EdgeCubies {
 

@@ -4,7 +4,7 @@
 This Python package contains two equivalent implementations (in C and Python) of Herbert Kociemba's two-phase algorithm for solving Rubik's Cube.
 Original Java implementation can be found here: http://kociemba.org/download.htm.
 
-These ports are pretty straightforward (not to say dumb) and most probably can be optimized. But they have been extensively tested in our Rubik's cube solving machines ([FAC System CubeSolver](https://blog.zok.pw/hacking/2015/08/18/fac-rubik-solver/) and [Meccano Rubik's Shrine](http://blog.zok.pw/hacking/2016/08/12/meccano-rubiks-shrine/)), so be confident the algorithm is working.
+These ports are pretty straightforward (not to say dumb) and most probably can be optimized. But they have been extensively tested in our Rubik's cube solving machines ([FAC System cubesolver](https://blog.zok.pw/hacking/2015/08/18/fac-rubik-solver/) and [Meccano Rubik's Shrine](http://blog.zok.pw/hacking/2016/08/12/meccano-rubiks-shrine/)), so be confident the algorithm is working.
 
 ## Installation
 This package is published on PyPI and can be installed with:
@@ -93,7 +93,7 @@ C sources reside in the `ckociemba` folder. Running `make` inside this directory
 When possible, `kociemba` will use C implementation under the hood. If something goes wrong (C version cannot be imported) it will automatically fall back to pure-Python implementation. However, it will be much slower.
 
 
-## Testing
+## testing
 To run the tests, clone the repository and run:
 
 ```$ python setup.py test```

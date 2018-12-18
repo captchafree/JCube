@@ -1,7 +1,7 @@
-package RubiksCube.Representation;
+package rubikscube.representation;
 
-import RubiksCube.Enums.Color;
-import RubiksCube.Enums.CornerPosition;
+import rubikscube.enums.Color;
+import rubikscube.enums.CornerPosition;
 
 public class CornerCubies {
 

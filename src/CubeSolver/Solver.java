@@ -1,6 +1,6 @@
-package CubeSolver;
+package cubesolver;
 
-import RubiksCube.Representation.RubiksCube;
+import rubikscube.representation.RubiksCube;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,8 +11,8 @@ public class Solver {
 
     public static String solve(RubiksCube cube) {
 
-        File commandFile = new File("src/CubeSolver/kociembaSolver/kociemba ");
-        File commandDir = new File("src/CubeSolver/kociembaSolver");
+        File commandFile = new File("src/cubesolver/kociembaSolver/kociemba ");
+        File commandDir = new File("src/cubesolver/kociembaSolver");
 
         Process p;
         try {
