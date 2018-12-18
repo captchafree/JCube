@@ -8,7 +8,7 @@ import visualcube.attributes.StageMaskType;
 import visualcube.attributes.VCAttributes;
 import visualcube.generation.VisualCube;
 
-public class Driver {
+class Driver {
 
     public static void main(String[] args) {
         RubiksCube cube = new RubiksCube();

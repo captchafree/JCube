@@ -8,12 +8,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+//TODO: optimize double turns
 public class Edges {
 
     private HashMap<EdgePosition, EdgeCubie> cubies;
 
     public Edges() {
-        cubies = new HashMap<EdgePosition, EdgeCubie>();
+        cubies = new HashMap<>();
         EdgeCubie[] edges = EdgeCubies.getCubies();
 
         cubies.put(EdgePosition.UB, edges[0]);
