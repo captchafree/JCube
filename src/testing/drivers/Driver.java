@@ -1,4 +1,4 @@
-package testing;
+package testing.drivers;
 
 import cubesolver.Solver;
 import rubikscube.representation.RubiksCube;
