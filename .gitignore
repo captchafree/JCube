@@ -25,3 +25,6 @@ hs_err_pid*
 # Images
 *.png
 *.jpg
+
+# Don't ignore necessary JARs
+!/JARs/*
