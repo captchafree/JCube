@@ -33,7 +33,7 @@ public class Edges {
         cubies.put(EdgePosition.DL, edges[11]);
     }
 
-    public void setCubies(EdgeCubie[] cubies) {
+    void setCubies(EdgeCubie[] cubies) {
         int count = 0;
         for (EdgePosition pos : EdgeCubies.getPositions()) {
             this.cubies.put(pos, cubies[count]);

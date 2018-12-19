@@ -36,14 +36,9 @@ public class RubiksCube {
         this.edges.setCubies(edges);
     }
 
-    public void putPieceAtLocation(CornerCubie cubie, CornerPosition pos) {
-        corners.putCubieAtLocation(cubie, pos);
-    }
-
-    public void putPieceAtLocation(EdgeCubie cubie, EdgePosition pos) {
-        edges.putCubieAtLocation(cubie, pos);
-    }
-
+    /**
+     * Resets the cube to a solved state.
+     */
     public void solve() {
         this.corners = new Corners();
         this.edges = new Edges();
@@ -57,11 +52,11 @@ public class RubiksCube {
 
     public void randomlyOrientWithRespectTo(Map<CornerPosition, CornerCubie> corners_, Map<EdgePosition, EdgeCubie> edges_) {
         if (corners_ == null) {
-            corners_ = new HashMap<CornerPosition, CornerCubie>();
+            corners_ = new HashMap<>();
         }
 
         if (edges_ == null) {
-            edges_ = new HashMap<EdgePosition, EdgeCubie>();
+            edges_ = new HashMap<>();
         }
 
         this.corners.randomlyOrientWithRespectTo(corners_);
@@ -201,8 +196,13 @@ public class RubiksCube {
         }
     }
 
-    public void executeScramble(String scramble) {
-        String[] moves = scramble.split(" ");
+    /**
+     * Executes the specified moves on the cube. No cube rotations are allowed and the moves must be separated by spaces.
+     * Valid sequence examples: "R U R' U'", "R2 U2 L2"
+     * @param sequence
+     */
+    public void executeSequence(String sequence) {
+        String[] moves = sequence.split(" ");
         for (String move : moves) {
             switch (move) {
                 case "U":
